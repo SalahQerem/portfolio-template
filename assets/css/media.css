@@ -1,0 +1,86 @@
+@media (max-width: 1200px){
+    .contact-methods .container{
+        top: -67px;
+    }
+    
+}
+
+@media (max-width: 992px){
+    .nav-item{
+        width: fit-content;
+    }
+
+    header{
+        background-position: -200px ;
+    }
+
+    .about > .container{
+        position: static;
+        transform: translate(0,0);
+        -webkit-transform: translate(0,0);
+        -moz-transform: translate(0,0);
+        -ms-transform: translate(0,0);
+        -o-transform: translate(0,0);
+    }
+
+    .services{
+        margin-top: 0;
+    }
+
+    .w-minimize{
+        width: 75%;
+    }
+
+    .contact-methods .container{
+        top: -79px;
+    }
+
+    .contact .container .desc p, form{
+        width: 90% !important;
+    }
+}
+
+@media (max-width: 768px){
+    header{
+        background-position: -200px ;
+    }
+
+    .bor-none{
+        border: none !important;
+    }
+
+    .cv .brands{
+        margin-top: 50px;
+        justify-content: space-around !important;
+    }
+
+    .cv .down-cv{
+        padding-inline: 50px;
+    }
+
+    .contact-font{
+        font-size: 13px;
+    }
+
+    .text-center-media{
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 576px){
+    header{
+        background-position: -350px ;
+    }
+
+    .header-content{
+        align-items: start !important;
+    }
+
+    .small-p{
+        padding-block: 10px;
+    }
+
+    .contact-methods .container{
+        top: -120px;
+    }
+}
