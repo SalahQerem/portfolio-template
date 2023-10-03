@@ -49,6 +49,81 @@ h2{
     }
 }
 
+body{
+    overflow: hidden;
+}
+
+.loading{
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    border: 3px solid;
+    border-color: var(--mainColor) var(--mainColor) transparent transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  .loader::after,
+  .loader::before {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    border: 3px solid;
+    border-color: transparent transparent var(--mainColor) var(--mainColor);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    animation: rotationBack 0.5s linear infinite;
+    transform-origin: center center;
+  }
+  .loader::before {
+    width: 32px;
+    height: 32px;
+    border-color: var(--mainColor) var(--mainColor) transparent transparent;
+    animation: rotation 1.5s linear infinite;
+  }
+      
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+  @keyframes rotationBack {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+      
+
+.navbar{
+    transition: 0.5s background-color;
+    -webkit-transition: 0.5s background-color;
+    -moz-transition: 0.5s background-color;
+    -ms-transition: 0.5s background-color;
+    -o-transition: 0.5s background-color;
+}
+
 .navbar .nav-link::after{
     content: '';
     background-color: var(--mainColor);
@@ -564,4 +639,17 @@ header .icons i:nth-of-type(5):hover{
     font-family: 'Raleway', sans-serif;
     color: rgb(33, 37, 41);
     font-weight: 500;
+}
+
+.back-to-top{
+    right: 30px;
+    bottom: 30px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
